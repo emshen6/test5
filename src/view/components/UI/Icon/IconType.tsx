@@ -3,5 +3,6 @@ export enum ICON {
     INSTAGRAM = 'instagram',
     ENVELOPE = 'envelope',
     PHONE = 'phone',
+    CART = 'cart',
     CATALOG = 'catalog',
 }

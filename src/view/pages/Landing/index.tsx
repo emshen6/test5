@@ -1,12 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './index.module.scss';
-import { useGetProductsQuery } from '../../../core/api/product';
 import { FactoryImage } from '../../../assets/image/FactoryImage';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer/index.tsx';
 import { Benefits } from '../../components/Benefits/index.tsx';
 import { About } from '../../components/About';
+import { CatalogPart } from '../../components/CatalogPart';
+import { useGetProductsQuery } from '../../../core/api/product';
 
 const cx = classNames.bind(styles);
 
@@ -25,6 +26,7 @@ export const Landing: React.FC = () => {
                 <FactoryImage />
                 <Benefits titles={titles} descriptions={descriptions} />
                 <About />
+                <CatalogPart />
                 <Footer />
             </ContentWrapper>
         </div>
